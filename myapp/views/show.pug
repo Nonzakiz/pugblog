@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+block content
+  .container
+
+    h1= title
+     p= detail
+
+mixin link(href, name)
+  a(href=href)&attributes(attributes)= name
+
++link('/delete/'+idtitle, 'ลบบทความนี้')(class="btn")
++link('/edit/'+idtitle, 'แก้ไขบทความนี้')(class="btn")
++link('/', 'กลับหน้าแรก')(class="btn")
++link('/add', 'เพิ่มบทความใหม่')(class="btn")

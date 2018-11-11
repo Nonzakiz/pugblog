@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+
+     link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+  a(href="/") หน้าแรก
+<br>
+
+h1 แก้ไขบทความ : #{title}
+
+form(action='/update/'+idtitle method='post')
+    input(type="text" name="title" value=title  )
+    <br>
+    textarea(type="text" name="detail" placeholder="ใส่ บทความ ที่นี่")=detail
+    <br>
+    input(type='submit', value='Submit')

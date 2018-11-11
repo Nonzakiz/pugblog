@@ -10,6 +10,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+// Schema
 const Schema = new mongoose.Schema({
   title: String,
   detail: String
@@ -25,6 +26,7 @@ mongoose.connection
     console.log(`Connection error`);
   });
 global.Article = mongoose.model('Article',Schema);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

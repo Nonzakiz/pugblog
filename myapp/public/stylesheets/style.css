@@ -1,8 +1,64 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+  color: #ff6600;
+  }
+  h1 {
+  color: #ff6600;
+  }
+  p{
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: darkgrey;
+  }
+  a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  }
+  a:hover, a:active {
+  background-color: red;
+  }
+  input[type=text]{
+  width: 200px;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin-bottom: 10px;
+  }
+  input[type=password]{
+  width: 200px;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin-bottom: 10px;
+  }
+  textarea {
+  width: 400px;
+  height: 250px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  }
+  li {
+  list-style: none;
+  *list-style: decimal;
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 10px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
