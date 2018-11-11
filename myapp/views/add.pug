@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 เพิ่มบทความ
+
+  form(action='/save' method='post')
+    input(type="text" name="title" placeholder="ใส่ บทความ ที่นี่" )
+    <br>
+    textarea(type="text" name="detail" placeholder="ใส่ บทความ ที่นี่")
+    <br>
+    input(type='submit', value='Submit')
